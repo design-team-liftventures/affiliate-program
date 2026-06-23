@@ -3,7 +3,7 @@ import Credentials from 'next-auth/providers/credentials'
 
 const MOCK_USER = {
   id: 'mock-001',
-  name: 'Amanda Costa',
+  name: 'Maria Costa',
   email: 'partner@example.com',
   password: 'affiliate2024', // Mock only — never store plain passwords in production
 }

@@ -16,7 +16,7 @@ const item = {
 
 export function HeroSection() {
   return (
-    <section className="bg-interactive-primary">
+    <section className="bg-brand-main">
       <motion.div
         variants={container}
         initial="hidden"
@@ -43,25 +43,14 @@ export function HeroSection() {
           bring a reader in. Recurring commissions, a catalog readers actually
           love, and a community your audience already belongs to.
         </motion.p>
-        <motion.div
-          variants={item}
-          className="mt-2 flex flex-col items-center gap-3 sm:flex-row"
-        >
+        <motion.div variants={item} className="mt-2">
           <Link href="/affiliate/apply">
             <Button
-              size="lg"
-              className="bg-bg-default text-interactive-primary hover:bg-interactive-primary-bg"
+              variant="secondary"
+              size="md"
+              className="rounded-full border-transparent px-9 py-3.5 text-body font-semibold text-brand-main hover:bg-interactive-hover-bg"
             >
               Apply now
-            </Button>
-          </Link>
-          <Link href="#commission">
-            <Button
-              size="lg"
-              variant="secondary"
-              className="border-text-contrast/40 bg-transparent text-text-contrast hover:bg-white/10"
-            >
-              View commission structure
             </Button>
           </Link>
         </motion.div>

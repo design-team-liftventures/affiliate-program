@@ -28,7 +28,7 @@ export function SectionHeading({
       <span
         className={cn(
           'text-caption-sm font-semibold uppercase tracking-widest',
-          isLight ? 'text-text-contrast/70' : 'text-interactive-primary'
+          isLight ? 'text-text-contrast/70' : 'text-brand-main'
         )}
       >
         {overline}

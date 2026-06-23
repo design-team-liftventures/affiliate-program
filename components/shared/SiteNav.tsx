@@ -38,7 +38,10 @@ export function SiteNav() {
             Already a partner? Log in →
           </Link>
           <Link href="/affiliate/apply">
-            <Button variant="primary" size="sm">
+            <Button
+              variant="primary"
+              className="rounded-xl px-4 py-1.5 text-body font-semibold"
+            >
               Apply now
             </Button>
           </Link>

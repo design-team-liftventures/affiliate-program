@@ -25,7 +25,7 @@ const stats = [
 
 export function CommissionTable() {
   return (
-    <section id="commission" className="scroll-mt-20 bg-interactive-primary">
+    <section id="commission" className="scroll-mt-20 bg-indigo-2">
       <div className="mx-auto max-w-7xl px-6 py-20">
         <SectionHeading
           tone="light"
@@ -46,10 +46,10 @@ export function CommissionTable() {
                   {plan.name}
                 </span>
                 {plan.highlight && (
-                  <Badge variant="primary">Higher commission</Badge>
+                  <Badge variant="primary" className="bg-indigo-6 text-indigo-1">Higher commission</Badge>
                 )}
               </div>
-              <span className="text-h2 font-medium text-interactive-primary">
+              <span className="text-h2 font-medium text-indigo-1">
                 {plan.rate}
               </span>
               <span className="text-body-sm text-text-secondary">
