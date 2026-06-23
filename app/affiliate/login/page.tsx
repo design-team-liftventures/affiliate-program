@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-bg-paper">
+    <div className="flex min-h-screen flex-col bg-bg-paper">
       <header className="bg-bg-default">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           <Logo />
@@ -22,22 +22,14 @@ export default function LoginPage() {
         </div>
       </header>
 
-      <div className="bg-interactive-primary py-8">
-        <div className="mx-auto max-w-7xl px-6 text-center">
-          <p className="text-caption-sm font-semibold uppercase tracking-widest text-text-contrast/70">
-            Affiliate Partner Portal
-          </p>
-          <p className="mt-1 text-body text-text-contrast-secondary">
-            Access your dashboard, track earnings, and get your affiliate link.
-          </p>
-        </div>
-      </div>
-
-      <main id="main-content">
-        <div className="mx-auto mb-16 mt-12 max-w-[440px] rounded-2xl bg-bg-default p-10 shadow-elevation-3">
+      <main id="main-content" className="flex flex-1 items-center justify-center py-12">
+        <div className="w-full max-w-[440px] rounded-2xl bg-bg-default p-10 shadow-elevation-3">
           <h1 className="text-h5 font-medium text-text-primary">
             Sign in to your affiliate account
           </h1>
+          <p className="mt-2 text-body-sm text-text-secondary">
+            Access your dashboard, track earnings, and get your affiliate link.
+          </p>
           <div className="mt-6">
             <Suspense fallback={null}>
               <LoginForm />
