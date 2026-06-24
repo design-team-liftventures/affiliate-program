@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { SiteNav } from '@/components/shared/SiteNav'
 import { SiteFooter } from '@/components/shared/SiteFooter'
 import { HeroSection } from '@/components/affiliate/HeroSection'
+import { TrustBar } from '@/components/affiliate/TrustBar'
 import { WhySection } from '@/components/affiliate/WhySection'
 import { WhoSection } from '@/components/affiliate/WhoSection'
 import { HowItWorks } from '@/components/affiliate/HowItWorks'
@@ -22,6 +23,7 @@ export default function AffiliateLandingPage() {
       <SiteNav />
       <main id="main-content">
         <HeroSection />
+        <TrustBar />
         <WhySection />
         <WhoSection />
         <HowItWorks />

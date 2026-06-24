@@ -63,6 +63,10 @@ const config: Config = {
         'olive-4': '#B9E1A7',
         'olive-5': '#D1EBC4',
         'olive-6': '#E8F5E2',
+        'orange-1': '#9F6033',
+        'orange-6': '#FCEADD',
+        'magenta-1': '#8E5159',
+        'magenta-6': '#F4E2E4',
       },
       boxShadow: {
         'elevation-1': '0px 2px 8px 0px rgba(0,0,0,0.12)',
