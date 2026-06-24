@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/Button'
 
 const container = {
   hidden: {},
@@ -45,13 +44,12 @@ export function HeroSection() {
         </motion.p>
         <motion.div variants={item} className="mt-2">
           <Link href="/affiliate/apply">
-            <Button
-              variant="secondary"
-              size="md"
-              className="rounded-full border-transparent px-9 py-3.5 text-body font-semibold text-aqua-2 hover:bg-interactive-hover-bg"
+            <button
+              type="button"
+              className="inline-flex items-center justify-center rounded-full bg-bg-default px-9 py-3.5 text-body font-semibold text-aqua-2 transition-colors hover:bg-interactive-hover-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-contrast focus-visible:ring-offset-2 focus-visible:ring-offset-aqua-2"
             >
               Apply now
-            </Button>
+            </button>
           </Link>
         </motion.div>
         <motion.div variants={item}>
